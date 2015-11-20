@@ -1,0 +1,15 @@
+; LINK16 file URL
+http://download.microsoft.com/download/vc15/Update/1/WIN98/EN-US/Lnk563.exe
+
+
+; ASSEMBLY 16 bit
+npp_save
+npp_run cmd /K (cd /D "$(CURRENT_DIRECTORY)" && $(NPP_DIRECTORY)\Masm615\make16.bat $(NPP_DIRECTORY) $(NAME_PART))
+
+"$(NPP_DIRECTORY)\DOSBox\DOSBoxPortable.exe"  "$(CURRENT_DIRECTORY)"
+
+
+
+; ASSEMBLY 32 bit
+npp_save
+npp_run cmd /K (cd /D "$(CURRENT_DIRECTORY)" && $(NPP_DIRECTORY)\Masm615\make32.bat $(NPP_DIRECTORY) $(NAME_PART) && cls && $(NAME_PART))
