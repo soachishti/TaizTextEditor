@@ -82,7 +82,7 @@
         <GUIConfig name="ScintillaGlobalSettings" enableMultiSelection="no" />
         <GUIConfig name="openSaveDir" value="0" defaultDirPath="" />
         <GUIConfig name="titleBar" short="no" />
-        <GUIConfig name="stylerTheme" path="C:\Users\soac\Desktop\TeezTextEditor\stylers.xml" />
+        <GUIConfig name="stylerTheme" path="C:\Users\soac\Desktop\TaizTextEditor\stylers.xml" />
         <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="200">
             <PluginDlg pluginName="NppExec.dll" id="2" curr="3" prev="-1" isVisible="yes" />
             <ActiveTabs cont="0" activeTab="-1" />
@@ -95,6 +95,7 @@
     <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no" />
     <History nbMaxFile="15" inSubMenu="no" customLength="-1">
         <File filename="C:\Users\soac\Desktop\FASTTextEditor\Masm615\make32.bat" />
+        <File filename="C:\Dev\Masm615\make16.bat" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
