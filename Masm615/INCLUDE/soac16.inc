@@ -1,8 +1,5 @@
 .model small, c
-.stack 
-.686p 
-.mmx 
-.xmm 
+.stack  
 
 .code
 InitMode PROC
@@ -26,7 +23,7 @@ PrintChar PROC
     mov ah, 9
     ;mov al, 'A'
     mov bh, 0
-    mov bl, 0Fh
+    mov bl, 0fh
     mov cx, 1
     int 10h
     ret
@@ -173,3 +170,11 @@ ScrollDown PROC
     int 10h
     ret
 ScrollDown ENDP
+
+; Derived from irvine16.inc
+startup MACRO
+    mov  ax,@data
+    mov  ds,ax
+ENDM
+
+.LIST
