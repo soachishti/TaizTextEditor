@@ -1,5 +1,5 @@
 # TaizTextEditor
-## A notepad++ bundled with MASM615 16bit/32bit, Turbo C++ and C++ (gcc) 
+##### A notepad++ bundled with MASM615 16bit/32bit, Turbo C++ and C++ (gcc) 
     * [Download](https://github.com/soachishti/TaizTextEditor/archive/master.zip) latest version of TaizTextEditor
     * Extract it to desktop.
     * Open extracted folder
