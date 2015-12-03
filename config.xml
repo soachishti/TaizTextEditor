@@ -13,7 +13,7 @@
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" size="4" replaceBySpace="no" />
         <!--App position-->
-        <GUIConfig name="AppPosition" x="190" y="146" width="955" height="659" isMaximized="yes" />
+        <GUIConfig name="AppPosition" x="72" y="0" width="955" height="758" isMaximized="yes" />
         <!-- For the primary scintilla view,
              2 status for Attribut lineNumberMargin, bookMarkMargin, indentGuideLine and currentLineHilitingShow: "show" or "hide"
              4 status for Attribut folderMarkStyle : "simple", "arrow", "circle" and "box"  -->
@@ -98,6 +98,15 @@
         <File filename="C:\Dev\Masm615\make16.bat" />
         <File filename="C:\Users\soac\Desktop\TaizTextEditor\AsmWork\soac16Example\demo001.asm" />
         <File filename="C:\Users\soac\Desktop\TaizTextEditor\AsmWork\soac16Example\demo002.asm" />
+        <File filename="C:\Users\soac\Desktop\AssemblyCode\AssemblyLib\make.bat" />
+        <File filename="C:\Users\soac\Desktop\TaizTextEditor\Masm615\INCLUDE\soac16.inc" />
+        <File filename="C:\Users\soac\Desktop\AssemblyCode\Presentation\HideCursor.asm" />
+        <File filename="C:\Users\soac\Desktop\AssemblyCode\Presentation\CartesianLine.asm" />
+        <File filename="C:\Users\soac\Desktop\AssemblyCode\Presentation\demo002.asm" />
+        <File filename="C:\Users\soac\Desktop\AssemblyCode\Presentation\demo001.asm" />
+        <File filename="C:\Users\soac\Desktop\AssemblyCode\Presentation\PrintPX.asm" />
+        <File filename="C:\Users\soac\Desktop\AssemblyCode\Akhtar015.asm" />
+        <File filename="C:\Users\soac\Desktop\CPPCode\ascii.cpp" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
