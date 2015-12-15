@@ -6,14 +6,14 @@
         <!-- 2 status : "show" or "hide"-->
         <GUIConfig name="StatusBar">show</GUIConfig>
         <!-- For all attributs, 2 status : "yes" or "no"-->
-        <GUIConfig name="TabBar" dragAndDrop="yes" drawTopBar="yes" drawInactiveTab="yes" reduce="yes" closeButton="yes" doubleClick2Close="no" vertical="no" multiLine="no" hide="no" />
+        <GUIConfig name="TabBar" dragAndDrop="yes" drawTopBar="yes" drawInactiveTab="yes" reduce="yes" closeButton="no" doubleClick2Close="no" vertical="no" multiLine="no" hide="no" />
         <!-- 2 positions : "horizontal" or "vertical"-->
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <!-- For the attribut of position, 2 status : docked or undocked ; 2 status : "show" or "hide" -->
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" size="4" replaceBySpace="no" />
         <!--App position-->
-        <GUIConfig name="AppPosition" x="558" y="94" width="955" height="758" isMaximized="yes" />
+        <GUIConfig name="AppPosition" x="30" y="27" width="955" height="659" isMaximized="no" />
         <!-- For the primary scintilla view,
              2 status for Attribut lineNumberMargin, bookMarkMargin, indentGuideLine and currentLineHilitingShow: "show" or "hide"
              4 status for Attribut folderMarkStyle : "simple", "arrow", "circle" and "box"  -->
@@ -84,36 +84,15 @@
         <GUIConfig name="titleBar" short="no" />
         <GUIConfig name="stylerTheme" path="C:\Users\soac\Desktop\TaizTextEditor\stylers.xml" />
         <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="200">
-            <PluginDlg pluginName="NppExec.dll" id="2" curr="3" prev="-1" isVisible="yes" />
             <ActiveTabs cont="0" activeTab="-1" />
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
-            <ActiveTabs cont="3" activeTab="0" />
+            <ActiveTabs cont="3" activeTab="-1" />
         </GUIConfig>
     </GUIConfigs>
     <!-- The History of opened files list -->
-    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no">
-        <Find name="PrintString" />
-        <Find name="WriteString" />
-        <Find name="handle" />
-    </FindHistory>
-    <History nbMaxFile="15" inSubMenu="no" customLength="-1">
-        <File filename="C:\Users\soac\Desktop\AssemblyCode\AssemblyLib\make.bat" />
-        <File filename="C:\Users\soac\Desktop\TaizTextEditor\Masm615\INCLUDE\soac16.inc" />
-        <File filename="C:\Users\soac\Desktop\AssemblyCode\Presentation\HideCursor.asm" />
-        <File filename="C:\Users\soac\Desktop\AssemblyCode\Presentation\CartesianLine.asm" />
-        <File filename="C:\Users\soac\Desktop\AssemblyCode\Presentation\demo002.asm" />
-        <File filename="C:\Users\soac\Desktop\AssemblyCode\Presentation\demo001.asm" />
-        <File filename="C:\Users\soac\Desktop\AssemblyCode\Presentation\PrintPX.asm" />
-        <File filename="C:\Users\soac\Desktop\AssemblyCode\Akhtar015.asm" />
-        <File filename="C:\Users\soac\Desktop\CPPCode\ascii.cpp" />
-        <File filename="C:\Users\soac\Desktop\TaizTextEditor\AsmWork\data.txt" />
-        <File filename="C:\Users\soac\Desktop\TaizTextEditor\AsmWork\demo16.asm" />
-        <File filename="C:\Users\soac\Desktop\TaizTextEditor\AsmWork\demo32.asm" />
-        <File filename="C:\Users\soac\Desktop\TaizTextEditor\Tools\Masm615\INCLUDE\soac16.inc" />
-        <File filename="C:\Users\soac\Desktop\TaizTextEditor\AsmWork\soac16Example\file16.asm" />
-        <File filename="C:\Users\soac\Desktop\TaizTextEditor\session.xml" />
-    </History>
+    <History nbMaxFile="15" inSubMenu="no" customLength="-1" />
+    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no" />
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
         <ProjectPanel id="1" workSpaceFile="" />
