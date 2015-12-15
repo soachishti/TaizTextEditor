@@ -1,5 +1,5 @@
-.model small, c
-.stack  
+Include Irvine16.inc
+Include MACROS.inc
 
 .code
 InitMode PROC
@@ -170,6 +170,92 @@ ScrollDown PROC
     int 10h
     ret
 ScrollDown ENDP
+
+; Reference http://fleder44.net/312/notes/16Files/Index.html
+; Reference http://jlp.freeservers.com/files/
+CreateFile PROC, fileName:PTR BYTE
+	mov ah,3Ch 
+    mov cx,00000000b 
+    mov dx, fileName
+    int 21h 
+    jc quit
+	; Just close it for now. May causing performance issue.
+	mov bx,ax
+	mov ah,3Eh
+	int 21h
+	ret
+quit:
+	mWrite "Write Failed"
+	ret
+CreateFile ENDP
+
+ReadFile PROC, fileName:PTR BYTE, buffer:PTR BYTE, bufferSize:WORD
+	LOCAL fileHandle:WORD
+	;; open an input file for reading
+	mov ah,3Dh
+	mov al,0
+	mov dx, fileName
+	int 21h
+	; Error occur if CF is set
+	jc quit
+	mov fileHandle,ax
+	
+	; read from the file
+	mov ah, 3Fh
+	mov bx, fileHandle
+	mov cx, bufferSize
+	mov dx, buffer
+	int 21h
+	jc quit
+	
+	;close the file
+	mov ah,3Eh
+	mov bx,fileHandle
+	int 21h
+	ret
+quit:
+	mWriteLn "Read file Failed"
+	ret
+ReadFile ENDP
+
+WriteFile PROC, fileName:PTR BYTE, buffer:PTR BYTE, bufferSize:WORD
+	LOCAL fileHandle:WORD
+	; open an input file for reading
+	mov ah,3Dh
+	mov al,1	; 0 Read, 1 Write, 2 Read/Write
+	mov dx, fileName
+	int 21h
+	; Error occur if CF is set
+	jc quit
+	mov fileHandle,ax
+	
+	; Write in file
+	mov ah,40h 
+    mov bx, fileHandle
+    mov cx, bufferSize
+    mov dx, buffer 
+    int 21h 
+    jc quit
+	
+	;close the file
+	mov ah,3Eh
+	mov bx,fileHandle
+	int 21h
+	ret
+quit:
+	mWriteLn "Write failed"
+	ret
+WriteFile ENDP
+
+DeleteFile PROC, fileName:PTR BYTE
+    mov ah,41h 
+    lea dx, fileName
+    int 21h 
+    jc quit
+quit:
+	mWriteLn "Delete file failed"
+	ret
+DeleteFile ENDP
 
 ; Derived from irvine16.inc
 startup MACRO
